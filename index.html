@@ -373,7 +373,7 @@
   <!-- ───────────── FOOTER ───────────── -->
   <footer class="footer">
     <div class="footer-content">
-      Jean-Manuel Cabrillana &copy; 2025
+      Jean-Manuel Cabrillana &copy; <span id="footer-year"></span>
     </div>
   </footer>
 
@@ -395,6 +395,9 @@
       document.getElementById('navscreen').classList.remove('is-active');
       document.getElementById('toggle-navbar-button').classList.remove('is-active');
     }
+
+    // Dynamic footer year
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
