@@ -382,180 +382,59 @@ a:hover {
   margin-bottom: 0.9rem;
 }
 
-/* Research interests */
-.research-interests p {
+/* News / dated list */
+.news-list {
+  list-style: none;
+  padding-left: 0;
+  font-size: 0.88rem;
+  color: var(--text-color);
+}
+
+.news-list li {
+  padding: 0.3rem 0;
+  border-bottom: 1px solid var(--border-color);
+  line-height: 1.6;
+}
+
+.news-list li:last-child {
+  border-bottom: none;
+}
+
+.news-list em {
+  color: var(--text-color-light);
+  font-style: normal;
+  min-width: 7rem;
+  display: inline-block;
+}
+
+/* Publications */
+.pub-list {
+  list-style: none;
+  padding-left: 0;
+  font-size: 0.88rem;
+  color: var(--text-color);
+}
+
+.pub-list li {
+  padding: 0.4rem 0;
+  border-bottom: 1px solid var(--border-color);
+  line-height: 1.65;
+}
+
+.pub-list li:last-child {
+  border-bottom: none;
+}
+
+/* About section paragraphs */
+#about p {
   font-size: 0.9rem;
   color: var(--text-color-light);
   line-height: 1.7;
+  margin-bottom: 0.6rem;
 }
 
-/* Entry (education, experience, project) */
-.entry {
-  margin-bottom: 1rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid var(--border-color);
-}
-
-.entry:last-child {
-  border-bottom: none;
+#about p:last-child {
   margin-bottom: 0;
-  padding-bottom: 0;
-}
-
-.entry-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  flex-wrap: wrap;
-  gap: 0.25rem;
-}
-
-.entry-title {
-  font-weight: 700;
-  font-size: 0.92rem;
-  color: var(--text-color);
-}
-
-.entry-location {
-  font-size: 0.85rem;
-  color: var(--text-color-light);
-  flex-shrink: 0;
-}
-
-.entry-sub {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  flex-wrap: wrap;
-  gap: 0.2rem;
-  margin-top: 0.1rem;
-}
-
-.entry-subtitle {
-  font-style: italic;
-  font-size: 0.88rem;
-  color: var(--text-color-light);
-}
-
-.entry-dates {
-  font-size: 0.85rem;
-  color: var(--text-color-light);
-  flex-shrink: 0;
-}
-
-.entry-tools {
-  font-size: 0.82rem;
-  color: var(--primary-color);
-  margin-top: 0.15rem;
-}
-
-.entry ul {
-  margin-top: 0.4rem;
-  padding-left: 1.3rem;
-  font-size: 0.88rem;
-  color: var(--text-color);
-}
-
-.entry ul li {
-  margin-bottom: 0.15rem;
-}
-
-.entry-link {
-  font-size: 0.85rem;
-  margin-left: 0.3rem;
-}
-
-.entry-link a {
-  color: var(--link-color);
-  text-decoration: none;
-}
-
-.entry-link a:hover {
-  text-decoration: underline;
-}
-
-/* Skills */
-.skills-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 0.88rem;
-}
-
-.skills-table td {
-  padding: 0.3rem 0.4rem 0.3rem 0;
-  vertical-align: top;
-  border-bottom: 1px solid var(--border-color);
-}
-
-.skills-table tr:last-child td {
-  border-bottom: none;
-}
-
-.skills-table td:first-child {
-  font-weight: 700;
-  white-space: nowrap;
-  padding-right: 1rem;
-  width: 11rem;
-  color: var(--text-color);
-}
-
-.skills-table td:last-child {
-  color: var(--text-color-light);
-}
-
-/* Publications / numbered lists */
-.numbered-list {
-  padding-left: 1.3rem;
-  font-size: 0.88rem;
-  color: var(--text-color);
-}
-
-.numbered-list li {
-  margin-bottom: 0.4rem;
-}
-
-.cert-list {
-  list-style: none;
-  padding-left: 0;
-}
-
-.cert-date {
-  color: var(--text-color-light);
-}
-
-/* References */
-.references-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.reference-card {
-  font-size: 0.87rem;
-  color: var(--text-color);
-  flex: 1 1 200px;
-  background-color: var(--background-color);
-  border-radius: 8px;
-  padding: 0.85rem 1rem;
-  border: 1px solid var(--border-color);
-}
-
-.reference-card strong {
-  display: block;
-  font-size: 0.92rem;
-  margin-bottom: 0.2rem;
-  color: var(--text-color);
-}
-
-.reference-card a {
-  color: var(--link-color);
-}
-
-.reference-card .rel {
-  font-style: italic;
-  margin-top: 0.4rem;
-  color: var(--primary-color);
-  font-size: 0.83rem;
 }
 
 /* ─── Footer ─── */
@@ -592,20 +471,6 @@ a:hover {
 
   .profile-card {
     position: static;
-  }
-
-  .entry-header,
-  .entry-sub {
-    flex-direction: column;
-    gap: 0.1rem;
-  }
-
-  .skills-table td:first-child {
-    width: auto;
-  }
-
-  .references-grid {
-    flex-direction: column;
   }
 }
 
